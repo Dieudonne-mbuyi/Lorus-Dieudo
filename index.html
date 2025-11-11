@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UOMtv — La voix numérique de l'UOM</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ====== Navigation ====== -->
+  <header>
+    <img src="images/logo.jpg" alt="Logo UOMtv">
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#objectifs">Objectifs</a></li>
+        <li><a href="#programmes">Programmes</a></li>
+        <li><a href="#equipe">Équipe</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ====== Section Accueil ====== -->
+  <section id="accueil" class="hero">
+    <h1>UOMtv</h1>
+    <p>La voix numérique de l’Université Officielle de Mbuji-Mayi</p>
+    <a href="#presentation" class="btn">Découvrir plus</a>
+  </section>
+
+  <!-- ====== Présentation ====== -->
+  <section id="presentation" class="section">
+    <h2>
+      <span>Présentation</span>
+    </h2>
+    <p>
+      UOMtv est une plateforme médiatique créée pour valoriser et diffuser
+      les activités scientifiques, culturelles et sociales de l’Université
+      Officielle de Mbuji-Mayi. Elle vise à renforcer la visibilité de l’UOM
+      et à servir de pont entre l’université et la communauté.
+    </p>
+  </section>
+
+  <!-- ====== Objectifs ====== -->
+  <section id="objectifs" class="section alt">
+    <h2>    
+    <span>Objectifs</span> 
+    </h2>
+    <ul>
+      <li>Promouvoir l’image et les valeurs de l’UOM.</li>
+      <li>Diffuser les productions académiques et médiatiques de l’université.</li>
+      <li>Créer un espace d’échange entre étudiants, enseignants et société.</li>
+      <li>Former les étudiants aux métiers des médias et de la communication.</li>
+    </ul>
+  </section>
+
+  <!-- ====== Programmes ====== -->
+  <section id="programmes" class="section">
+    <h2>Nos Programmes</h2>
+    <p>UOMtv produit et diffuse divers contenus :</p>
+    <ul>
+      <li>🎓 Émissions éducatives et scientifiques</li>
+      <li>🗣 Débats et tables rondes universitaires</li>
+      <li>🎭 Activités culturelles et artistiques</li>
+      <li>🎥 Reportages et documentaires institutionnels</li>
+    </ul>
+  </section>
+
+  <!-- ====== Équipe ====== -->
+  <section id="equipe" class="section alt">
+    <h2>
+      <span>Notre Équipe</span>
+    </h2>
+    <p>
+      L’équipe de UOMtv est composée d’étudiants, d’enseignants et de techniciens
+      passionnés, tous animés par la volonté de faire rayonner l’UOM à travers
+      les médias numériques.
+    </p>
+  </section>
+
+  <!-- ====== Contact ====== -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>📍 Université Officielle de Mbuji-Mayi</p>
+    <p>📧 Email : contact@uomtv.ac.cd</p>
+    <p>📞 Téléphone : +243 89 47 29 324</p>
+  </section>
+
+  <!-- ====== Pied de page ====== -->
+  <footer>
+    <p>&copy; 2025 UOMtv — La voix numérique de l’UOM. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // Défilement fluide
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+  <script type="module"src="js/app.js"></script>
+  </script>
+</body>
+</html>

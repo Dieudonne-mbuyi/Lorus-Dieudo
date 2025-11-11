@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administration UOMtv</title>
+
+  <!-- 🔗 Lien vers ton fichier CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="admin-body">
+  <div class="admin-card container">
+    <img src="images/logo.jpg" alt="Logo UOMtv" class="logo" />
+    <div class="title">Panneau d'administration</div>
+    <p class="subtitle">Connectez-vous pour publier les vidéos officielles</p>
+
+    <!-- Champ email -->
+    <input
+      id="email"
+      class="input"
+      type="email"
+      placeholder="Adresse e-mail administrateur"
+    />
+
+    <!-- Champ mot de passe -->
+    <input
+      id="password"
+      class="input"
+      type="password"
+      placeholder="Mot de passe"
+    />
+
+    <!-- Bouton de connexion -->
+    <button id="loginBtn" class="btn">Se connecter</button>
+
+    <!-- Message d'erreur -->
+    <p id="loginError" class="msg error"></p>
+  </div>
+
+  <!-- 🧠 Script Firebase + admin -->
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
